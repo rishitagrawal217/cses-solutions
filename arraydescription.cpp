@@ -14,11 +14,7 @@ int main(){
     if (a[0] == 0) {
         for (int v = 1; v <= m; ++v) dp[0][v] = 1;
     } else {
-        if (a[0] >= 1 && a[0] <= m) dp[0][a[0]] = 1;
-        else {
-            cout << 0 << '\n';
-            return 0;
-        }
+        dp[0][a[0]] = 1;
     }
  
     for(int i=1;i<n;i++){
